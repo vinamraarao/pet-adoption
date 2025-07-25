@@ -223,7 +223,7 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo.png"; // Make sure this points to your actual file
 
 const buttonStyle = {
   backgroundColor: "#FFA500",
@@ -279,10 +279,21 @@ const Navbar = () => {
       <Toolbar sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         {/* Logo and App Name */}
         <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src={logo} alt="Logo" style={{ width: "40px", height: "40px" }} />
-          <Typography variant="h6" sx={{ fontWeight: "bold", color: "#000" }}>
+          <Box>
+            <img
+              src={logo}
+              alt="Logo"
+              style={{
+                width: "95",
+                height: "auto",
+                maxHeight: "95px",
+                objectFit: "contain",
+              }}
+            />
+          </Box>
+          {/* <Typography variant="h6" sx={{ fontWeight: "bold", color: "#000" }}>
             PawFinds
-          </Typography>
+          </Typography> */}
         </Box>
 
         {/* Navigation Links */}
