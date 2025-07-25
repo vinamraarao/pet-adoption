@@ -7,9 +7,9 @@ A full-stack MERN project for pet adoption and pet services like grooming, walki
 ## 🚀 Features
 
 - 🐶 View available pets and apply for adoption and request for posting a pet( sell a pet )   
-- ✅ Doctor verification of pet health
+- ✅ Doctor verification of pet vaccination details and gives appoinment vaccination
 - 🧼 Request services: dog walking, grooming, caring
-- 👨‍⚕️ Admin, Doctor, Shop Owner and Service Manager dashboards
+- 👨‍⚕️ User, Admin, Doctor, Shop Owner and Service Manager dashboards
 - 💬 Notification system for adoption and service updates
 
 ## 🛠️ Technologies Used
