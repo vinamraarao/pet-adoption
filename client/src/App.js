@@ -112,6 +112,7 @@ import ShopOwnerLayout from "./Components/ShopOwner/ShopOwnerLayout";
 import PaymentPage from "./Components/Payment/PaymentPage";
 import PaymentSuccess from "./Components/Payment/PaymentSuccess";
 import Donate from "./Pages/Donate";
+import ReviewPage from './Pages/ReviewPage';
 
 // ✅ Protected route
 const ProtectedRoute = ({ element }) => {
@@ -184,6 +185,7 @@ const App = () => {
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/payment-success" element={<PaymentSuccess />} />
           <Route path="/donate" element={<ProtectedRoute element={<Donate />} />} />
+          <Route path="/reviews" element={<ReviewPage />} />
 
           {/* Optional: 404 fallback */}
           {/* <Route path="*" element={<Navigate to="/" replace />} /> */}

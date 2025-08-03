@@ -14,6 +14,8 @@ const petShopRoutes = require("./routes/petShopRoutes");
 const shopOwnerRoutes = require("./routes/shopOwnerRoutes");
 const notificationRoutes = require("./routes/notificationRoutes");
 const paymentRoutes = require('./routes/paymentRoutes');
+const reviewRoutes = require("./routes/reviewRoutes");
+const donationRoutes = require("./routes/donationRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -54,6 +56,8 @@ app.use("/api/petShop", petShopRoutes);
 app.use("/api/shopOwner", shopOwnerRoutes);
 app.use("/api/notifications", notificationRoutes);
 app.use('/api/payment', paymentRoutes);
+app.use("/api/reviews", reviewRoutes);
+app.use("/api/donations", donationRoutes);
 
 // Test Route
 app.get("/", (req, res) => {
